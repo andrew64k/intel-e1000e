@@ -1,6 +1,6 @@
 %global package_speccommit 94a0296efe870fd361a9e56cf2c558ff91c2fdf2
 %global usver 3.8.7
-%global xsver 2
+%global xsver 3
 %global xsrel %{xsver}%{?xscount}%{?xshash}
 %global package_srccommit 3.8.7
 %define vendor_name Intel
@@ -24,6 +24,8 @@ Version: 3.8.7
 Release: %{?xsrel}%{?dist}
 License: GPL
 Source0: intel-e1000e-3.8.7.tar.gz
+
+Patch0: 0001-e1000e-MTP.patch
 
 BuildRequires: gcc
 BuildRequires: kernel-devel
